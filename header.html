@@ -1,0 +1,51 @@
+﻿<!-- Header fragment: nav and mobile menu -->
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo-img {
+    display: block;
+    width: clamp(96px, 8vw, 132px);
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    #logo-img {
+      width: clamp(84px, 22vw, 108px);
+    }
+  }
+</style>
+<nav id="nav">
+  <div class="wrap ni">
+    <a href="/" class="logo">
+      <img id="logo-img" src="/assets/images/ADS Conversion white logo.png" alt="Ads Conversions Logo" width="132" height="132">
+    </a>
+    <ul class="nl">
+      <li><a href="/">Home</a></li>
+      <li><a href="/google-ads.html">Google Ads</a></li>
+      <li><a href="/meta-ads.html">Meta Ads</a></li>
+      <li><a href="/web-development.html">Web Development</a></li>
+      <li><a href="/marketplace-services.html">Marketplaces</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="hbg" id="hbg" onclick="tmenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <ul>
+    <li><a href="/" onclick="cmenu()">Home</a></li>
+    <li><a href="/google-ads.html" onclick="cmenu()">Google Ads</a></li>
+    <li><a href="/meta-ads.html" onclick="cmenu()">Meta Ads</a></li>
+    <li><a href="/web-development.html" onclick="cmenu()">Web Development</a></li>
+    <li><a href="/marketplace-services.html" onclick="cmenu()">Marketplaces</a></li>
+    <li><a href="/contact.html" onclick="cmenu()">Contact</a></li>
+  </ul>
+  <div class="mob-btns">
+    <a href="#contact" class="btn btn-g">Get Started</a>
+    <a href="tel:+918851751427" class="btn btn-ow">Call Us</a>
+  </div>
+</div>
